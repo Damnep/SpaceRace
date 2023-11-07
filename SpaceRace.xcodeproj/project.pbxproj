@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE50BDA12AFA469900C0801A /* GameSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE50BDA02AFA469900C0801A /* GameSceneView.swift */; };
+		CE50BDA42AFA472C00C0801A /* GameSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE50BDA32AFA472C00C0801A /* GameSceneViewController.swift */; };
+		CE50BDA62AFA4AB300C0801A /* StarShipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE50BDA52AFA4AB300C0801A /* StarShipView.swift */; };
 		CEFFA84F2AFA3FB0009EFAFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFFA84E2AFA3FB0009EFAFB /* AppDelegate.swift */; };
 		CEFFA8512AFA3FB0009EFAFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFFA8502AFA3FB0009EFAFB /* SceneDelegate.swift */; };
 		CEFFA8532AFA3FB0009EFAFB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFFA8522AFA3FB0009EFAFB /* MainViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE50BDA02AFA469900C0801A /* GameSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSceneView.swift; sourceTree = "<group>"; };
+		CE50BDA32AFA472C00C0801A /* GameSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSceneViewController.swift; sourceTree = "<group>"; };
+		CE50BDA52AFA4AB300C0801A /* StarShipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarShipView.swift; sourceTree = "<group>"; };
 		CEFFA84B2AFA3FB0009EFAFB /* SpaceRace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceRace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFFA84E2AFA3FB0009EFAFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEFFA8502AFA3FB0009EFAFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +43,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE50BD9F2AFA465900C0801A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE50BDA02AFA469900C0801A /* GameSceneView.swift */,
+				CE50BDA52AFA4AB300C0801A /* StarShipView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CE50BDA22AFA46F500C0801A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CEFFA8522AFA3FB0009EFAFB /* MainViewController.swift */,
+				CE50BDA32AFA472C00C0801A /* GameSceneViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		CEFFA8422AFA3FAF009EFAFB = {
 			isa = PBXGroup;
 			children = (
@@ -58,7 +82,8 @@
 			children = (
 				CEFFA84E2AFA3FB0009EFAFB /* AppDelegate.swift */,
 				CEFFA8502AFA3FB0009EFAFB /* SceneDelegate.swift */,
-				CEFFA8522AFA3FB0009EFAFB /* MainViewController.swift */,
+				CE50BDA22AFA46F500C0801A /* Controllers */,
+				CE50BD9F2AFA465900C0801A /* Views */,
 				CEFFA8542AFA3FB0009EFAFB /* Main.storyboard */,
 				CEFFA8572AFA3FB2009EFAFB /* Assets.xcassets */,
 				CEFFA8592AFA3FB2009EFAFB /* LaunchScreen.storyboard */,
@@ -138,8 +163,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE50BDA62AFA4AB300C0801A /* StarShipView.swift in Sources */,
 				CEFFA8532AFA3FB0009EFAFB /* MainViewController.swift in Sources */,
+				CE50BDA12AFA469900C0801A /* GameSceneView.swift in Sources */,
 				CEFFA84F2AFA3FB0009EFAFB /* AppDelegate.swift in Sources */,
+				CE50BDA42AFA472C00C0801A /* GameSceneViewController.swift in Sources */,
 				CEFFA8512AFA3FB0009EFAFB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
@@ -14,8 +14,19 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="SpaceRace" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDg-Jp-h7L">
+                                <rect key="frame" x="159" y="357" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="6Qu-1Q-NEi" kind="show" id="V7I-q0-cPM"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -23,6 +34,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="121" y="4"/>
+        </scene>
+        <!--Game Scene View Controller-->
+        <scene sceneID="ezq-TE-Ljt">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="6Qu-1Q-NEi" customClass="GameSceneViewController" customModule="SpaceRace" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ra6-B4-Vjs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OuO-rg-SNr" customClass="GameSceneView" customModule="SpaceRace" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SfH-Zq-Kg7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OuO-rg-SNr" firstAttribute="top" secondItem="SfH-Zq-Kg7" secondAttribute="top" id="7La-3d-ek0"/>
+                            <constraint firstAttribute="bottom" secondItem="OuO-rg-SNr" secondAttribute="bottom" id="PLn-fe-CVe"/>
+                            <constraint firstItem="OuO-rg-SNr" firstAttribute="leading" secondItem="SfH-Zq-Kg7" secondAttribute="leading" id="fNJ-FD-Xg7"/>
+                            <constraint firstAttribute="trailing" secondItem="OuO-rg-SNr" secondAttribute="trailing" id="u49-8A-zIX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="7n9-FF-SSQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TKM-0b-YwL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750.38167938931292" y="0.70422535211267612"/>
         </scene>
     </scenes>
     <resources>
