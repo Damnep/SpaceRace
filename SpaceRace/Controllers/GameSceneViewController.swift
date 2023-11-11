@@ -16,10 +16,5 @@ class GameSceneViewController: UIViewController {
         super.viewDidLoad()
         
         animator.createaBGAnimator()
-
-
     }
-    
-
-   
 }
