@@ -11,17 +11,12 @@ class BulletImageView: UIImageView {
     
     init() {
         super.init(image: .bullet)
-        frame.size = CGSize(width: 20, height: 20)
+        
+        frame.size = CGSize(width: 10, height: 30)
 //        self.animation - метод для анимации ImageView (images, durations, repeats)
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    deinit {
-        print("deleted")
-    }
-
-   
 }

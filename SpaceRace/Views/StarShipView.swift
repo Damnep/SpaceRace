@@ -41,21 +41,26 @@ class StarShipView: UIView {
         let shooter = UITapGestureRecognizer(target: self, action: #selector(shoot))
         addGestureRecognizer(moover)
         addGestureRecognizer(shooter)
-        
     }
     
     @objc func mooveShip(_ sender: UIPanGestureRecognizer) {
         let location = sender.location(in: superview)
         center.x = location.x
         shipCenter = location
-
+        
     }
     
     @objc func shoot(_ sender: UITapGestureRecognizer) {
         let bulletImageView = BulletImageView()
         bulletImageView.center = center
         superview?.insertSubview(bulletImageView, belowSubview: self)
-          
-        
+        UIView.animate(withDuration: 2, delay: 0, options: [.curveLinear]) {
+            bulletImageView.frame.origin.y = self.superview!.bounds.minY - bulletImageView.bounds.maxY
+            
+        } completion: { _ in
+            bulletImageView.removeFromSuperview()
+        }
     }
+    
+    
 }
