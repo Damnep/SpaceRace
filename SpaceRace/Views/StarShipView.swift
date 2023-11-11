@@ -8,6 +8,7 @@
 import UIKit
 
 class StarShipView: UIView {
+    var shipCenter:CGPoint?
     
     
     override init(frame: CGRect) {
@@ -17,15 +18,44 @@ class StarShipView: UIView {
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        
         setupUI()
     }
     
+    override func didMoveToSuperview() {
+        super.didMoveToSuperview()
+        addGestures()
+    }
+    
+    
+    
+    
     func setupUI() {
-        frame.size = CGSize(width: 100, height: 100)
-        
         let shipImageView = UIImageView(image: .ship)
+        frame.size = CGSize(width: 75, height: 75)
         addSubview(shipImageView)
         shipImageView.frame = bounds
+    }
+    
+    func addGestures() {
+        let moover = UIPanGestureRecognizer(target: self, action: #selector(mooveShip))
+        let shooter = UITapGestureRecognizer(target: self, action: #selector(shoot))
+        addGestureRecognizer(moover)
+        addGestureRecognizer(shooter)
+        
+    }
+    
+    @objc func mooveShip(_ sender: UIPanGestureRecognizer) {
+        let location = sender.location(in: superview)
+        center.x = location.x
+        shipCenter = location
+
+    }
+    
+    @objc func shoot(_ sender: UITapGestureRecognizer) {
+        let bulletImageView = BulletImageView()
+        bulletImageView.center = center
+        superview?.insertSubview(bulletImageView, belowSubview: self)
+          
+        
     }
 }

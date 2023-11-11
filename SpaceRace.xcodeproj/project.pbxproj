@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE11A19C2AFD5CD100C763E6 /* BackgroundAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE11A19B2AFD5CD100C763E6 /* BackgroundAnimator.swift */; };
+		CE11A19E2AFE91E200C763E6 /* BulletImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE11A19D2AFE91E200C763E6 /* BulletImageView.swift */; };
 		CE50BDA12AFA469900C0801A /* GameSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE50BDA02AFA469900C0801A /* GameSceneView.swift */; };
 		CE50BDA42AFA472C00C0801A /* GameSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE50BDA32AFA472C00C0801A /* GameSceneViewController.swift */; };
 		CE50BDA62AFA4AB300C0801A /* StarShipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE50BDA52AFA4AB300C0801A /* StarShipView.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE11A19B2AFD5CD100C763E6 /* BackgroundAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundAnimator.swift; sourceTree = "<group>"; };
+		CE11A19D2AFE91E200C763E6 /* BulletImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletImageView.swift; sourceTree = "<group>"; };
 		CE50BDA02AFA469900C0801A /* GameSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSceneView.swift; sourceTree = "<group>"; };
 		CE50BDA32AFA472C00C0801A /* GameSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSceneViewController.swift; sourceTree = "<group>"; };
 		CE50BDA52AFA4AB300C0801A /* StarShipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarShipView.swift; sourceTree = "<group>"; };
@@ -47,6 +51,8 @@
 			isa = PBXGroup;
 			children = (
 				CE50BDA02AFA469900C0801A /* GameSceneView.swift */,
+				CE11A19D2AFE91E200C763E6 /* BulletImageView.swift */,
+				CE11A19B2AFD5CD100C763E6 /* BackgroundAnimator.swift */,
 				CE50BDA52AFA4AB300C0801A /* StarShipView.swift */,
 			);
 			path = Views;
@@ -164,10 +170,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE50BDA62AFA4AB300C0801A /* StarShipView.swift in Sources */,
+				CE11A19C2AFD5CD100C763E6 /* BackgroundAnimator.swift in Sources */,
 				CEFFA8532AFA3FB0009EFAFB /* MainViewController.swift in Sources */,
 				CE50BDA12AFA469900C0801A /* GameSceneView.swift in Sources */,
 				CEFFA84F2AFA3FB0009EFAFB /* AppDelegate.swift in Sources */,
 				CE50BDA42AFA472C00C0801A /* GameSceneViewController.swift in Sources */,
+				CE11A19E2AFE91E200C763E6 /* BulletImageView.swift in Sources */,
 				CEFFA8512AFA3FB0009EFAFB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,6 +10,7 @@ import UIKit
 class GameSceneView: UIView {
     
     let shipView = StarShipView()
+
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -23,7 +24,9 @@ class GameSceneView: UIView {
     
     func setupUI() {
         addSubview(shipView)
-        shipView.center = center
+        shipView.center = CGPoint(x: center.x, y: bounds.maxY * 0.9)
+        
     }
 }
+//сделать пулю
 

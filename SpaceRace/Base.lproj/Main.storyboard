@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDg-Jp-h7L">
-                                <rect key="frame" x="159" y="357" width="75" height="35"/>
+                                <rect key="frame" x="150" y="336" width="75" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
@@ -51,13 +51,16 @@
                         <viewLayoutGuide key="safeArea" id="SfH-Zq-Kg7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="OuO-rg-SNr" firstAttribute="top" secondItem="SfH-Zq-Kg7" secondAttribute="top" id="7La-3d-ek0"/>
-                            <constraint firstAttribute="bottom" secondItem="OuO-rg-SNr" secondAttribute="bottom" id="PLn-fe-CVe"/>
-                            <constraint firstItem="OuO-rg-SNr" firstAttribute="leading" secondItem="SfH-Zq-Kg7" secondAttribute="leading" id="fNJ-FD-Xg7"/>
-                            <constraint firstAttribute="trailing" secondItem="OuO-rg-SNr" secondAttribute="trailing" id="u49-8A-zIX"/>
+                            <constraint firstItem="OuO-rg-SNr" firstAttribute="top" secondItem="Ra6-B4-Vjs" secondAttribute="top" id="6aB-qj-3Gs"/>
+                            <constraint firstAttribute="bottom" secondItem="OuO-rg-SNr" secondAttribute="bottom" id="YzH-NS-jLA"/>
+                            <constraint firstAttribute="trailing" secondItem="OuO-rg-SNr" secondAttribute="trailing" id="c12-Ne-Wv7"/>
+                            <constraint firstItem="OuO-rg-SNr" firstAttribute="leading" secondItem="Ra6-B4-Vjs" secondAttribute="leading" id="s6z-3C-P39"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7n9-FF-SSQ"/>
+                    <connections>
+                        <outlet property="gameSceneView" destination="OuO-rg-SNr" id="lrA-rz-hn0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TKM-0b-YwL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
