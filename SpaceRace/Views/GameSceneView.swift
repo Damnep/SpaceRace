@@ -11,7 +11,6 @@ class GameSceneView: UIView {
     
     let shipView = StarShipView()
 
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
@@ -28,5 +27,3 @@ class GameSceneView: UIView {
         
     }
 }
-//сделать пулю
-

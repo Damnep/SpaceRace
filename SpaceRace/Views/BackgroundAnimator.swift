@@ -24,7 +24,7 @@ class BackgroundAnimator {
         let secondBGView = getImageView()
         secondBGView.frame.origin = CGPoint(x: view.frame.origin.x, y: view.frame.origin.y - view.frame.height)
    
-        timer = Timer.scheduledTimer(withTimeInterval: 1/30, repeats: true) { _ in
+        timer = Timer.scheduledTimer(withTimeInterval: 1/30, repeats: true) { _ in// - заменить на CADisplayLink
             if !firstBGView.frame.intersects(self.view.frame) {
                 firstBGView.frame.origin.y = secondBGView.frame.origin.y - firstBGView.frame.height
             }
@@ -48,3 +48,4 @@ class BackgroundAnimator {
     }
 }
 
+// анимация не через таймер

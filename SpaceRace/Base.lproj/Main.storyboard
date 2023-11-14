@@ -38,7 +38,7 @@
         <!--Game Scene View Controller-->
         <scene sceneID="ezq-TE-Ljt">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="6Qu-1Q-NEi" customClass="GameSceneViewController" customModule="SpaceRace" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="6Qu-1Q-NEi" customClass="GameSceneViewController" customModule="SpaceRace" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ra6-B4-Vjs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -64,7 +64,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TKM-0b-YwL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750.38167938931292" y="0.70422535211267612"/>
+            <point key="canvasLocation" x="903" y="3"/>
         </scene>
     </scenes>
     <resources>
