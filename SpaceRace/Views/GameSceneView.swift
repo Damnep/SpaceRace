@@ -24,6 +24,5 @@ class GameSceneView: UIView {
     func setupUI() {
         addSubview(shipView)
         shipView.center = CGPoint(x: center.x, y: bounds.maxY * 0.9)
-        
     }
 }

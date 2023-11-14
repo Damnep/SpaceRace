@@ -12,21 +12,16 @@ class MeteorsCreator{
     
     init(gameSceneView1: UIView) {
         self.gameSceneView = gameSceneView1
-        
     }
+    
     func createMeteor() {
-        let meteor = MetorImageView(gameSceneView1: gameSceneView)
+        let meteor = MetorImageView()
         gameSceneView.addSubview(meteor)
+        meteor.generateMeteor(superViewFrame: gameSceneView.frame)
         
-        let delay = Double.random(in: 0...1)
+        let delay = Double.random(in: 1...3)
         DispatchQueue.main.asyncAfter(deadline: .now() + delay){
             self.createMeteor()
         }
     }
 }
-
-
-
-// вращение метеоров в рандомных направлениях
-// рандомная скорость движения метеоров
-//
